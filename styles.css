@@ -1,0 +1,61 @@
+body {
+background-color: #ffecb3;
+font-family: 'Arial', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+text-align: center;
+}
+
+.container {
+background-color: #fff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-message {
+font-size: 3em;
+color: #ff5722;
+animation: fadeIn 3s ease-in;
+}
+
+.cake-animation {
+margin-top: 20px;
+animation: bounce 2s infinite;
+}
+
+.cake-img {
+width: 200px;
+height: auto;
+}
+
+.sub-message {
+margin-top: 20px;
+font-size: 1.2em;
+color: #666;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+transform: translateY(0);
+}
+40% {
+transform: translateY(-10px);
+}
+60% {
+transform: translateY(-5px);
+}
+}
